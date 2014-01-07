@@ -81,7 +81,7 @@
   <h2>Style Switch <a href="#" class="btn color2"><i class="fa fa-cog "></i></a></h2>
   <div class="inner">
     <h3>Predefined Styles</h3>
-    <ul class="colors list-unstyled" id="color1">
+    <ul class="colors list-unstyled" id="color8">
       <li><a href="#" class="blue-red" data-toggle="tooltip" title="Blue Red" > <i class="fa fa-cog fa-stop one"></i><i class="fa fa-cog fa-stop two"></i></a></li>
       <li><a href="#" class="midnight-blue" data-toggle="tooltip" title="Midnight Blue" > <i class="fa fa-cog fa-stop one"></i><i class="fa fa-cog fa-stop two"></i></a></li>
       <li><a href="#" class="mono-red" data-toggle="tooltip" title="Mono Red" > <i class="fa fa-cog fa-stop one"></i><i class="fa fa-cog fa-stop two"></i></a></li>

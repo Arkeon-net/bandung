@@ -1355,7 +1355,7 @@ textarea.input-lg {
   margin: 2px 0 0;
   list-style: none;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #008ABD;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0;
@@ -1368,7 +1368,7 @@ textarea.input-lg {
   left: auto;
 }
 .dropdown-menu .divider {
-  height: 1px;
+  height: 0.5px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -1379,14 +1379,14 @@ textarea.input-lg {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #333333;
+  color: #ffffff;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #262626;
-  background-color: #f5f5f5;
+  color: none;
+  background-color: #00aff0;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -2027,11 +2027,11 @@ textarea.input-lg {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #00aff0;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -2039,14 +2039,14 @@ textarea.input-lg {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #eeeeee;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -2062,14 +2062,14 @@ textarea.input-lg {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #dddddd;
+  border-color: none;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
