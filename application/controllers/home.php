@@ -19,6 +19,12 @@ class Home extends CI_Controller {
 		$this->load->view('template/container',$template);
 	}
 
+	function places(){
+		$template = $this->template->load();
+		$template['content'] = $this->load->view('front/place_detail', "", true);
+		$this->load->view('template/container', $template);
+	}
+
 
 }
 
