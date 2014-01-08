@@ -13,6 +13,12 @@ class Home extends CI_Controller {
 		$this->load->view('template/container', $template);
 	}
 
+	function grid(){
+		$template = $this->template->load();
+		$template['content'] = $this->load->view('front/category_grid',"",true);
+		$this->load->view('template/container',$template);
+	}
+
 
 }
 

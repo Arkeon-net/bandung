@@ -99,9 +99,8 @@
             <li> <a href="#"> <i class="fa fa-home fa-fw"></i> <span class="hidden-sm">Landmark</span></a> </li>
             <li> <a href="#"> <i class="fa fa-info-circle fa-fw"></i> <span class="hidden-sm">Food</span></a> </li>
             <li> <a href="#"> <i class="fa fa-bullhorn fa-fw"></i> <span class="hidden-sm">Vacation</span></a> </li>
-            <li> <a href="#"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Vacation</span></a> </li>
-            <li> <a href="#"> <i class="fa fa-pencil-square-o fa-fw"></i> <span class="hidden-sm ">Public Place</span></a> </li>
-          </ul>
+            <li> <a href="#"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Public Places</span></a> </li>
+            </ul>
         </div>
         <!-- end: Navigation Buttons/Quick Cart Tablets and large screens Only --> 
         
@@ -109,3 +108,11 @@
     </div>
   </div>
 </header>
+<script type="text/javascript">
+(function($) {
+  "use strict";
+  //Mega Menu
+ $('#menuMega').menu3d();
+     
+})(jQuery);
+</script>
