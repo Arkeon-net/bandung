@@ -25,6 +25,12 @@ class Home extends CI_Controller {
 		$this->load->view('template/container', $template);
 	}
 
+	function maps(){
+		$template = $this->template->load();
+		$template['content'] = $this->load->view('front/maps', "", true);
+		$this->load->view('template/container', $template);
+	}
+
 
 }
 

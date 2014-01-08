@@ -88,6 +88,9 @@
             <!-- Menu Item -->
             <li class="visible-xs"> <a href="#a"> <i class="fa fa-laptop"></i> <span>Public Place</span></a> </li>
             <!-- end: Menu Item --> 
+            <!-- Menu Item -->
+            <li class="visible-xs"> <a href="#a"> <i class="fa fa-laptop"></i> <span>Bandung Maps</span></a> </li>
+            <!-- end: Menu Item --> 
           </ul>
         </div>
         <!-- end: Mega Menu --> 
@@ -100,6 +103,7 @@
             <li> <a href="#"> <i class="fa fa-info-circle fa-fw"></i> <span class="hidden-sm">Food</span></a> </li>
             <li> <a href="#"> <i class="fa fa-bullhorn fa-fw"></i> <span class="hidden-sm">Vacation</span></a> </li>
             <li> <a href="#"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Public Places</span></a> </li>
+            <li> <a href="#"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Bandung Maps</span></a> </li>
             </ul>
         </div>
         <!-- end: Navigation Buttons/Quick Cart Tablets and large screens Only --> 
