@@ -41,7 +41,7 @@
             
             <div class="row"> 
               <div class="col-md-12 col-sm-12 col-xs-12">
-                <img id="product-image" style="height:318px;" src="<?php echo base_url();?>static/images/map2.png"/>
+                <div id="map" style="height:318px;"></div>
               </div> 
               
             </div>
@@ -55,7 +55,7 @@
 </div>
 <!-- end: container-->
 
-<div class="row clearfix f-space30"></div>
+<div class="row clearfix f-space10"></div>
 <!-- container -->
 <div class="container"> 
   <!-- row -->
@@ -351,9 +351,28 @@
 <!-- end: Related products -->
 <div class="row clearfix f-space30"></div>
 <script src="<?php echo base_url()?>static/js/jquery.elevatezoom.js" type="text/javascript"></script>
+
+<!-- Google Maps --> 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script> 
+<script type="text/javascript" src="<?php echo base_url();?>static/js/gmap3.js"></script> 
+
+
 <script type="text/javascript">
 (function($) {
-      
+      var lat="-6.922658";
+      var lon="107.616363";
+      $('#map').gmap3({
+      map:{
+      options:{
+       center: [lat, lon],
+       zoom: 14
+      }
+      },
+      marker:{
+      latLng: [lat, lon]
+      }
+      });
+
       //SPECIALS
       $('#places1').carousel({
         interval: 4000
