@@ -99,11 +99,11 @@
         <!-- Navigation Buttons/Quick Cart for Tablets and Desktop Only -->
         <div class="menu-links hidden-xs">
           <ul class="nav nav-pills nav-justified">
-            <li> <a href="#"> <i class="fa fa-home fa-fw"></i> <span class="hidden-sm">Landmark</span></a> </li>
+            <li> <a href="<?php echo base_url()?>home/grid" > <i class="fa fa-home fa-fw"></i> <span class="hidden-sm">Landmark</span></a> </li>
             <li> <a href="#"> <i class="fa fa-info-circle fa-fw"></i> <span class="hidden-sm">Food</span></a> </li>
             <li> <a href="#"> <i class="fa fa-bullhorn fa-fw"></i> <span class="hidden-sm">Vacation</span></a> </li>
             <li> <a href="#"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Public Places</span></a> </li>
-            <li> <a href="#"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Bandung Maps</span></a> </li>
+            <li> <a href="<?php echo base_url()?>home/maps"> <i class="fa fa-pencil fa-fw"></i> <span class="hidden-sm">Bandung Maps</span></a> </li>
             </ul>
         </div>
         <!-- end: Navigation Buttons/Quick Cart Tablets and large screens Only --> 

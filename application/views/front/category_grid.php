@@ -66,7 +66,7 @@
                               <div class='name'><a href='product.html'>Place Name</a></div>
                               <div class='big-price'> Address </div>
                               <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='#'>Detail</a> 
+                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places'>Detail</a> 
                                 <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
                               </div>
                               <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
@@ -99,7 +99,7 @@
                               <div class='name'><a href='product.html'>Place Name</a></div>
                               <div class='big-price'> Address </div>
                               <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='#'>Detail</a> 
+                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places'>Detail</a> 
                                 <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
                               </div>
                               <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
