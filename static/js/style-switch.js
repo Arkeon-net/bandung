@@ -10,24 +10,24 @@
 
 
 jQuery(document).ready(function($){
-$(".blue-red").click(function(){$("#colorstyle").attr("href","<?php echo base_url();?>static/css/skin/blue-red.css");
+$(".blue-red").click(function(){$("#colorstyle").attr("href","../static/css/skin/blue-red.css");
 return false;
 });
-$(".midnight-blue").click(function(){$("#colorstyle").attr("href","<?php echo base_url();?>static/css/skin/midnight-blue.css");
+$(".midnight-blue").click(function(){$("#colorstyle").attr("href","../static/css/skin/midnight-blue.css");
 return false;
 });
-$(".mono-red").click(function(){$("#colorstyle").attr("href","<?php echo base_url();?>static/css/skin/mono-red.css");
+$(".mono-red").click(function(){$("#colorstyle").attr("href","../static/css/skin/mono-red.css");
 return false;
 });
-$(".pinegreen-purple").click(function(){$("#colorstyle").attr("href","<?php echo base_url();?>static/css/skin/pinegreen-purple.css");
-return false;
-});
-
-$(".darkmagenta-rosybrown").click(function(){$("#colorstyle").attr("href","<?php echo base_url();?>static/css/skin/darkmagenta-rosybrown.css");
+$(".pinegreen-purple").click(function(){$("#colorstyle").attr("href","../static/css/skin/pinegreen-purple.css");
 return false;
 });
 
-$(".darkorchid-seagreen").click(function(){$("#colorstyle").attr("href","<?php echo base_url();?>static/css/skin/darkorchid-seagreen.css");
+$(".darkmagenta-rosybrown").click(function(){$("#colorstyle").attr("href","../static/css/skin/darkmagenta-rosybrown.css");
+return false;
+});
+
+$(".darkorchid-seagreen").click(function(){$("#colorstyle").attr("href","../static/css/skin/darkorchid-seagreen.css");
 return false;
 });
 
