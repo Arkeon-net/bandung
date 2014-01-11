@@ -31,32 +31,32 @@ $(".darkorchid-seagreen").click(function(){$("#colorstyle").attr("href","../stat
 return false;
 });
 
-$(".steel-blue").click(function(){$("#colorstyle").attr("href","<?php echo base_url(); ?>static/css/skin/steel-blue.css");
+$(".steel-blue").click(function(){$("#colorstyle").attr("href","../static/css/skin/steel-blue.css");
 return false;
 });
 
-$(".cadetblue-violetred").click(function(){$("#colorstyle").attr("href","<?php echo base_url(); ?>static/css/skin/cadetblue-violetred.css");
+$(".cadetblue-violetred").click(function(){$("#colorstyle").attr("href","../static/css/skin/cadetblue-violetred.css");
 return false;
 });
 
-$(".mediumpurple-seagreen").click(function(){$("#colorstyle").attr("href","c<?php echo base_url(); ?>static/css/skin/mediumpurple-seagreen.css");
+$(".mediumpurple-seagreen").click(function(){$("#colorstyle").attr("href","c../static/css/skin/mediumpurple-seagreen.css");
 return false;
 });
 
-$(".steelblue-leafgreen").click(function(){$("#colorstyle").attr("href","<?php echo base_url(); ?>static/css/skin/steelblue-leafgreen.css");
+$(".steelblue-leafgreen").click(function(){$("#colorstyle").attr("href","../static/css/skin/steelblue-leafgreen.css");
 return false;
 });
 
-$(".orange-steelblue").click(function(){$("#colorstyle").attr("href","<?php echo base_url(); ?>static/css/skin/orange-steelblue.css");
+$(".orange-steelblue").click(function(){$("#colorstyle").attr("href","../static/css/skin/orange-steelblue.css");
 return false;
 });
 
-$(".gray").click(function(){$("#colorstyle").attr("href","<?php echo base_url(); ?>static/css/skin/gray.css");
+$(".gray").click(function(){$("#colorstyle").attr("href","../static/css/skin/gray.css");
 return false;
 });
 
 
-$("#reset").click(function(){$("#colorstyle").attr("href","<?php echo base_url(); ?>static/css/skin/blue-red.css");
+$("#reset").click(function(){$("#colorstyle").attr("href","../static/css/skin/blue-red.css");
 return false;
 });
 
