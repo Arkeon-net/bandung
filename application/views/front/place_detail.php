@@ -69,8 +69,7 @@
         <li class="active"><a href="#details-info" data-toggle="tab"><i class="fa  fa-th-list fa-fw"></i> Details Info</a></li>
         <li><a href="#reviews" data-toggle="tab"><i class="fa fa-comments fa-fw"></i> Reviews</a></li>
         <li> <a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-fw"></i> Tags </a> </li>
-        <li><a href="#custom-tab" data-toggle="tab"><i class="fa fa-video-camera fa-fw"></i> Custom Tab</a></li>
-      </ul>
+       </ul>
       <!-- Tab panes -->
       <div class="tab-content">
         <div class="tab-pane active" id="details-info">
@@ -174,16 +173,6 @@
           <div class="tags"> 
             <a href="#a">Free</a> <a href="#a">Minimal</a> <a href="#a">Clean</a> <a href="#a">Flatro</a> <a href="#a">Metro</a> <a href="#a">Flat</a> <a href="#a">Blue</a> <a href="#a">Fashion</a> <a href="#a">Best</a> <a href="#a">Popular</a> <a href="#a">Good</a> <a href="#a">Free</a> <a href="#a">Minimal</a> <a href="#a">Clean</a> <a href="#a">Flatro</a> <a href="#a">Metro</a> <a href="#a">Flat</a> <a href="#a">Blue</a> <a href="#a">Fashion</a> <a href="#a">Best</a> <a href="#a">Popular</a> <a href="#a">Good</a> <a href="#a">Free</a> <a href="#a">Minimal</a> <a href="#a">Clean</a> <a href="#a">Flatro</a> <a href="#a">Metro</a> <a href="#a">Flat</a> <a href="#a">Blue</a> <a href="#a">Fashion</a> <a href="#a">Best</a> <a href="#a">Popular</a> <a href="#a">Good</a> <a href="#a">Free</a> <a href="#a">Minimal</a> <a href="#a">Clean</a> <a href="#a">Flatro</a> <a href="#a">Metro</a> <a href="#a">Flat</a> <a href="#a">Blue</a> <a href="#a">Fashion</a> <a href="#a">Best</a> <a href="#a">Popular</a> <a href="#a">Good</a> <a href="#a">Free</a> <a href="#a">Minimal</a> <a href="#a">Clean</a> <a href="#a">Flatro</a> <a href="#a">Metro</a> <a href="#a">Flat</a> <a href="#a">Blue</a> <a href="#a">Fashion</a> <a href="#a">Best</a> <a href="#a">Popular</a> <a href="#a">Good</a> 
           </div>
-        </div>
-        <div class="tab-pane" id="custom-tab">
-          <p>Phosfluorescently productize technically sound process improvements for customized bandwidth. Competently coordinate leveraged catalysts for change without multimedia based services. Objectively fabricate user-centric experiences before.</p>
-          <div class="video-wrapper">
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/keDneypw3HY" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- /video --> 
-          </div>
-          <!-- /video-wrapper --> 
         </div>
       </div>
       <!-- end: Tab panes --> 
