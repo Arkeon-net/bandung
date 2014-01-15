@@ -5,7 +5,7 @@
 			parent::__construct();
 		}
 		
-		function index(){
+		function index(){ 
 			$this->load->view('admin/main', array( 'content' => 'dashboard' ) );
 		}
 	}
