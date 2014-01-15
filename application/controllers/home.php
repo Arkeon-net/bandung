@@ -8,6 +8,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
+		var_dump($this->load->database());die();
 		$template = $this->template->load();
 		$template['content'] = $this->load->view('front/homepage',"",true);
 		$this->load->view('template/container', $template);
