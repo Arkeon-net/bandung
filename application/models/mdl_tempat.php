@@ -34,6 +34,12 @@ class Mdl_tempat extends CI_Model {
 		$this->db->where('id', $id);
 		$this->db->update($data);
 	}
+
+	//delete tempat
+	function delete_tempat($id)
+	{
+		$this->db->delete('tempat', array('id' => $id)); 
+	}
 }
 
 ?>
