@@ -4,13 +4,22 @@ class Home extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
+		$this->load->model('mdl_tempat');
 	}
 
 	public function index()
 	{
-		var_dump($this->load->database());die();
 		$template = $this->template->load();
-		$template['content'] = $this->load->view('front/homepage',"",true);
+		$new = $this->mdl_tempat->get_list_tempat_limit_date(9);
+		$newplaces = array();
+		$c = 0;
+		foreach ($new->result() as $key) {
+			$newplaces[$c]['nama'] = $key->nama;
+			$newplaces[$c]['id'] = $key->id;
+			$c++;
+		}
+		$data['place'] = $newplaces;
+		$template['content'] = $this->load->view('front/homepage',$data,true);
 		$this->load->view('template/container', $template);
 	}
 
@@ -20,7 +29,7 @@ class Home extends CI_Controller {
 		$this->load->view('template/container',$template);
 	}
 
-	function places(){
+	function places($id){
 		$template = $this->template->load();
 		$template['content'] = $this->load->view('front/place_detail', "", true);
 		$this->load->view('template/container', $template);

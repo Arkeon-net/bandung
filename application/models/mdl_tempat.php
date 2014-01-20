@@ -14,6 +14,14 @@ class Mdl_tempat extends CI_Model {
 		return $query->result();
 	}
 
+	//mengambil tempat berdasarkan limit order by date
+	function get_list_tempat_limit_date($limit){
+		$this->db->limit($limit);
+		$this->db->order_by('date_input','desc');
+		$query = $this->db->get('tempat');
+		return $query;
+	}
+
 	//mengambil detail tempat bedasarkan id
 	function get_detail_tempat($id)
 	{
