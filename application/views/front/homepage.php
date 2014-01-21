@@ -91,7 +91,7 @@
                               <div class='name'><a href=''>".$place[$i]['nama']."</a></div>
                               <div class='big-price'> Categories </div>
                               <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places/".$place[$i]['id']."'>Detail</a> 
+                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/placeDetail/".$place[$i]['id']."'>Detail</a> 
                                 <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
                               </div>
                               <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
@@ -124,7 +124,7 @@
                               <div class='name'><a href=''>".$place[$i]['nama']."</a></div>
                               <div class='big-price'> Categories </div>
                               <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places/".$place[$i]['id']."'>Detail</a> 
+                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/placeDetail/".$place[$i]['id']."'>Detail</a> 
                                 <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
                               </div>
                               <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
@@ -157,7 +157,7 @@
                               <div class='name'><a href=''>".$place[$i]['nama']."</a></div>
                               <div class='big-price'> Categories </div>
                               <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places/".$place[$i]['id']."'>Detail</a> 
+                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/placeDetail/".$place[$i]['id']."'>Detail</a> 
                                 <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
                               </div>
                               <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
@@ -219,7 +219,7 @@
                     <a class="btn btn-default btn-addtocart pull-right" href="#">Map</a>
                   </div>
                 </div>
-                <div class="meta-back"></div>
+                <div class="meta-back"></div>s
               </div>
             </div>
             <!-- end: item --> 
