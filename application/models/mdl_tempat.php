@@ -1,6 +1,8 @@
 <?php
 
 class Mdl_tempat extends CI_Model {
+
+	private $_table = 'tempat';
 	
 	function __contruct()
 	{
@@ -10,7 +12,7 @@ class Mdl_tempat extends CI_Model {
 	//mengambil semua list tempat
 	function get_list_tempat()
 	{
-		$query = $this->db->get('tempat');
+		$query = $this->db->get($this->_table);
 		return $query->result();
 	}
 
@@ -18,7 +20,7 @@ class Mdl_tempat extends CI_Model {
 	function get_list_tempat_limit_date($limit){
 		$this->db->limit($limit);
 		$this->db->order_by('date_input','desc');
-		$query = $this->db->get('tempat');
+		$query = $this->db->get($this->_table);
 		return $query;
 	}
 
@@ -26,14 +28,14 @@ class Mdl_tempat extends CI_Model {
 	function get_detail_tempat($id)
 	{
 		$array = array('id' => $id);
-		$query = $this->db->get_where('tempat', $array);
+		$query = $this->db->get_where($this->_table, $array);
 		return $query->result();
 	}
 
 	//insert tempat
 	function insert_tempat($data)
 	{
-		$this->db->insert('tempat', $data);
+		$this->db->insert($this->_table, $data);
 	}
 
 	//update tempat
@@ -46,7 +48,7 @@ class Mdl_tempat extends CI_Model {
 	//delete tempat
 	function delete_tempat($id)
 	{
-		$this->db->delete('tempat', array('id' => $id)); 
+		$this->db->delete($this->_table, array('id' => $id)); 
 	}
 }
 

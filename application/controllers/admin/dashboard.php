@@ -6,6 +6,6 @@
 		}
 		
 		function index(){ 
-			$this->load->view('admin/main', array( 'content' => 'dashboard' ) );
+			$this->load->view('admin/main', array( 'content' => 'dashboard', ) );
 		}
 	}
