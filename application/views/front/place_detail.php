@@ -28,7 +28,7 @@
             
             <!-- Title and rating info -->
             <div class="title">
-              <h1>Place Name</h1>
+              <h1><?php echo $place['nama'] ?></h1>
               <div class="rating"> 
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -74,33 +74,33 @@
       <div class="tab-content">
         <div class="tab-pane active" id="details-info">
           <p>Energistically repurpose cooperative platforms with end-to-end ideas. Credibly expedite extensible processes rather than functional communities. Holisticly streamline <em class="color1">future-proof</em> infomediaries <a href="#a">through highly</a> efficient e-commerce. <strong>Dynamically productivate</strong> revolutionary growth strategies with installed base initiatives. </p>
-          <p>Dynamically <strong class="color1">productivate</strong> revolutionary growth strategies with installed base initiatives. Seamlessly morph optimal core competencies with transparent paradigms.</p>
+          <p><?php echo $place['deskripsi'] ?></p>
           <div class="table-responsive">
             <table class="table table-striped">
               <tbody>
                 <tr>
-                  <td>Gender:</td>
-                  <td> Women</td>
+                  <td>Address</td>
+                  <td><?php echo $place['alamat']; ?></td>
                 </tr>
                 <tr>
-                  <td>Item Type:</td>
-                  <td> Bags</td>
+                  <td>Phone</td>
+                  <td><?php echo $place['telepon']; ?></td>
                 </tr>
                 <tr>
-                  <td>Material:</td>
-                  <td> Polyester</td>
+                  <td>Website</td>
+                  <td><?php echo $place['website']; ?></td>
                 </tr>
                 <tr>
-                  <td>Collar:</td>
-                  <td><strong class="color2">Turn-down Collar</strong></td>
+                  <td>Email</td>
+                  <td><?php echo $place['email']; ?></td>
                 </tr>
                 <tr>
-                  <td>Sleeve Length:</td>
-                  <td> Short</td>
+                  <td>Facebook</td>
+                  <td><?php echo $place['facebook'];?></td>
                 </tr>
                 <tr>
-                  <td>Shirts Type:</td>
-                  <td> Casual Shirts</td>
+                  <td>Twitter</td>
+                  <td><?php echo $place['twitter']; ?></td>
                 </tr>
               </tbody>
             </table>
