@@ -24,8 +24,37 @@ class Home extends CI_Controller {
 	}
 
 	function grid(){
+		$this->load->library('pagination');
+		
+		$config['base_url'] = base_url().'home/grid/';
+		$config['total_rows'] = $this->mdl_tempat->get_count_tempat();
+		$config['per_page'] = 9;
+		$config['uri_segment'] = 3;
+		$config['num_links'] = 4;
+		$config['full_tag_open'] = "<ul class='pagination'>";
+		$config['full_tag_close'] ="</ul>";
+		$config['num_tag_open'] = '<li>';
+		$config['num_tag_close'] = '</li>';
+		$config['cur_tag_open'] = "<li class='active'><a href='#'>";
+		$config['cur_tag_close'] = "</a></li>";
+		$config['next_tag_open'] = "<li>";
+		$config['next_tagl_close'] = "</li>";
+		$config['prev_tag_open'] = "<li>";
+		$config['prev_tagl_close'] = "</li>";
+		$config['first_tag_open'] = "<li>";
+		$config['first_tagl_close'] = "</li>";
+		$config['last_tag_open'] = "<li>";
+		$config['last_tagl_close'] = "</li>";
+		
+		$this->pagination->initialize($config);
+		
+		$page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+		$data['rows'] = $config['total_rows'];
+        $data["results"] = $this->mdl_tempat->get_tempat_paging($config["per_page"], $page,'nama','asc');
+        $data["links"] = $this->pagination->create_links();
+
 		$template = $this->template->load();
-		$template['content'] = $this->load->view('front/category_grid',"",true);
+		$template['content'] = $this->load->view('front/category_grid',$data,true);
 		$this->load->view('template/container',$template);
 	}
 

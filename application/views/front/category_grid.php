@@ -53,18 +53,21 @@
       <div class="box-content">
         <div class="box-products"> 
           
-          <!-- Products Row -->
-          <div class="row box-product"> 
-            <!-- Product -->
-            <?php 
-                  for ($i=0; $i < 3; $i++) { 
-                    echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+          <?php
+          $c=1;
+          $totpage = 1;
+            foreach ($results as $key) {
+              if($c==1){
+                echo "<div class='row box-product'> ";
+              }
+
+               echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
                           <div class='product-block'>
                             <div class='image'>
                               <a class='img' href='product.html'><img alt='places info' src='".base_url()."static/images/products/product1.jpg' title='product title'></a> </div>
                             <div class='product-meta'>
-                              <div class='name'><a href='product.html'>Place Name</a></div>
-                              <div class='big-price'> Address </div>
+                              <div class='name'><a href='product.html'>".$key->nama."</a></div>
+                              <div class='name'>".$key->alamat."</div>
                               <div class='big-btns'> 
                                 <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places'>Detail</a> 
                                 <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
@@ -78,93 +81,24 @@
                             <div class='meta-back'></div>
                           </div>
                        </div>";
-                   }
-                ?>
-            <!-- end: Product --> 
-          </div>
-          
-          <!-- end: Products Row -->
-          
-          <div class="clearfix f-space30"></div>
-          <!-- Products Row -->
-          <div class="row box-product"> 
-            <!-- Product -->
-            <?php 
-                  for ($i=0; $i < 3; $i++) { 
-                    echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
-                          <div class='product-block'>
-                            <div class='image'>
-                              <a class='img' href='product.html'><img alt='product info' src='".base_url()."static/images/products/product1.jpg' title='product title'></a> </div>
-                            <div class='product-meta'>
-                              <div class='name'><a href='product.html'>Place Name</a></div>
-                              <div class='big-price'> Address </div>
-                              <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='".base_url()."home/places'>Detail</a> 
-                                <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
-                              </div>
-                              <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
-                              <div class='small-btns'>
-                                <button class='btn btn-default btn-compare pull-left' data-toggle='tooltip' title='Rate & Review'> <i class='fa fa-star'></i> </button>
-                                <button class='btn btn-default btn-wishlist pull-left' data-toggle='tooltip' title='Favorite'> <i class='fa fa-heart fa-fw'></i> </button>
-                              </div>
-                            </div>
-                            <div class='meta-back'></div>
-                          </div>
-                       </div>";
-                   }
-                ?>
-            <!-- end: Product --> 
-          </div>
-          
-          <!-- end: Products Row -->
-          
-          <div class="clearfix f-space30"></div>
-          <!-- Products Row -->
-          <div class="row box-product"> 
-            <!-- Product -->
-            <?php 
-                  for ($i=0; $i < 3; $i++) { 
-                    echo "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
-                          <div class='product-block'>
-                            <div class='image'>
-                              <a class='img' href='product.html'><img alt='product info' src='".base_url()."static/images/products/product1.jpg' title='product title'></a> </div>
-                            <div class='product-meta'>
-                              <div class='name'><a href='product.html'>Place Name</a></div>
-                              <div class='big-price'> Address </div>
-                              <div class='big-btns'> 
-                                <a class='btn btn-default btn-view pull-left' href='#'>Detail</a> 
-                                <a class='btn btn-default btn-addtocart pull-right' href='#'>Map</a>
-                              </div>
-                              <div class='rating'> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-half-o'></i> <i class='fa fa-star-o'></i> </div>
-                              <div class='small-btns'>
-                                <button class='btn btn-default btn-compare pull-left' data-toggle='tooltip' title='Rate & Review'> <i class='fa fa-star'></i> </button>
-                                <button class='btn btn-default btn-wishlist pull-left' data-toggle='tooltip' title='Favorite'> <i class='fa fa-heart fa-fw'></i> </button>
-                              </div>
-                            </div>
-                            <div class='meta-back'></div>
-                          </div>
-                       </div>";
-                   }
-                ?>
-            <!-- end: Product --> 
-          </div>
-          
-          <!-- end: Products Row --> 
+
+              $c++;
+              $totpage++;
+              if ($c==4 || $totpage==(count($results)+1)) {
+
+                  echo "</div>
+                        <div class='clearfix f-space30'></div>";
+                $c=1;
+              }
+            }
+          ?>
           
         </div>
       </div>
       <div class="clearfix f-space30"></div>
       <span class="pull-left">Showing 1-9 of 240 products</span>
       <div class="pull-right">
-        <ul class="pagination pagination-lg">
-          <li class="disabled"><a href="#"><i class="fa fa-angle-left"></i></a></li>
-          <li  class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-        </ul>
+        <?php echo $links;?>
       </div>
     </div>
     

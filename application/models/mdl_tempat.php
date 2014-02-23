@@ -16,6 +16,26 @@ class Mdl_tempat extends CI_Model {
 		return $query->result();
 	}
 
+	function get_count_tempat(){
+		$query = $this->db->count_all($this->_table);
+		return $query;
+	}
+
+	function get_tempat_paging($limit,$start,$order_by,$ordermet){
+		$this->db->limit($limit,$start);
+		$this->db->order_by($order_by,$ordermet);
+		$query = $this->db->get($this->_table);
+
+		if ($query->num_rows>0) {
+			foreach ($query->result() as $key) {
+				$data[] = $key;
+			}
+			return $data;
+		}else{
+			return 0;
+		}
+	}
+
 	//mengambil tempat berdasarkan limit order by date
 	function get_list_tempat_limit_date($limit){
 		$this->db->limit($limit);
