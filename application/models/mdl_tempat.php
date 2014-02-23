@@ -39,25 +39,17 @@ class Mdl_tempat extends CI_Model {
 	}
 
 	//update tempat
->>>>>>> refs/remotes/origin/master
 	function update_tempat($id, $data)
 	{
 		$this->db->where('id', $id);
 		$this->db->update($data);
 	}
 
-<<<<<<< HEAD
-	// delete tempat
-	// $id -> id tempat yang mau di delete
-	function delete_tempat($id)
-	{
-		$this->db->delete('tempat', array('id' => $id)); 
-=======
+
 	//delete tempat
 	function delete_tempat($id)
 	{
 		$this->db->delete($this->_table, array('id' => $id)); 
->>>>>>> refs/remotes/origin/master
 	}
 }
 
