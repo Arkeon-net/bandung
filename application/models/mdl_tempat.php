@@ -1,11 +1,8 @@
 <?php
 
 class Mdl_tempat extends CI_Model {
-<<<<<<< HEAD
-=======
 
 	private $_table = 'tempat';
->>>>>>> refs/remotes/origin/master
 	
 	function __contruct()
 	{
@@ -15,31 +12,6 @@ class Mdl_tempat extends CI_Model {
 	//mengambil semua list tempat
 	function get_list_tempat()
 	{
-<<<<<<< HEAD
-		$query = $this->db->get('tempat');
-		return $query->result();
-	}
-
-	// mengambil detail tempat
-	// $id -> id daya yang mau di ambil
-	function get_detail_tempat($id)
-	{
-		$array = array('id' => $id);
-		$query = $this->db->get_where('tempat', $array);
-		return $query->result();
-	}
-
-	// insert tempat 
-	// $data -> array field yang baru
-	function insert_tempat($data)
-	{
-		$this->db->insert('tempat', $data);
-	}
-
-	// update tempat
-	// $id -> id yang mau di update
-	// $data -> array field yang mau di update
-=======
 		$query = $this->db->get($this->_table);
 		return $query->result();
 	}
