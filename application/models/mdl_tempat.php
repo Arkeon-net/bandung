@@ -2,7 +2,7 @@
 
 class Mdl_tempat extends CI_Model {
 
-	private $_table = 'tempat';
+	private $_table = 'tempat tmp';
 	
 	function __contruct()
 	{
@@ -21,7 +21,12 @@ class Mdl_tempat extends CI_Model {
 		return $query;
 	}
 
-	function get_tempat_paging($limit,$start,$order_by,$ordermet){
+	function get_tempat_paging($limit,$start,$order_by,$ordermet,$id_taxonomi){
+		$this->db->select('*');
+		$this->db->from($this->_table);
+		$this->db->join('tempat_taxonomi tt',
+						'tmp.id = tt.id_tempat', 'inner');
+		$this->db->where('tt.id_taxonomi', $id_taxonomi);
 		$this->db->limit($limit,$start);
 		$this->db->order_by($order_by,$ordermet);
 		$query = $this->db->get($this->_table);
